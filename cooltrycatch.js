@@ -1,7 +1,7 @@
 function CoolTryCatch(){
-		
-	function isNullOrUndefined(objectToTest){
-	    return objectToTest === undefined || objectToTest === null;
+	
+    function isNullOrUndefined(objectToTest) {
+	    return (objectToTest === undefined || objectToTest === null) && true;
 	}
 	
 	function notifyNoNoCoolObject(originalException){
@@ -28,6 +28,7 @@ function CoolTryCatch(){
 		        coolFoo : notCoolObject.notCoolFoo,
 		        coolBar : notCoolObject.notCoolBar
 		    };
+            
 	    }catch(noCoolObjectProvided){
 	    	notifyNoNoCoolObject(noCoolObjectProvided);
 	    	return null;
